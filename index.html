@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>7 Up & Down</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<main class="container">
+			<!-- Start Button -->
+			<div class="position start-btn-container display">
+			    <h1 class="logo">7 Up & Down</h1>
+				<button id="start">Start</button>
+			</div>
+			<!--   RULES   -->
+			<div class="position rules">
+				<h1>Rules are Simple:</h1>
+				<ul>
+					<li>Two Dice will be rolled together.</li>
+					<li>Numbers on both of the dice will be added.</li>
+					<li>You have to guess that if the number will be greater than 7, Lesser that 7 or Equal to 7.</li>
+					<li>If you think it will be greater than 7 select <i>"UP"</i></li>
+					<li>If you think it will be smaller than 7 select <i>"DOWN"</i>.</li>
+					<li>If you think it will be equal to 7 select <i>"EQUAL"</i></li>
+					<li>There will be 10 Rounds of 2 points each.</li>
+					<li>If you score greater than Computer then you Win!</li>
+				</ul>
+				<button id="letsGo">Let's Go</button>
+			</div>
+			<!--   TABLE   -->
+			<div class="position table">
+			<div class="round"><p>Round: <span id="round"></span> OF <span>10</span></p></div>
+			<div class="choices scores">
+				<div class="user">
+					<p>Your Score:</p>
+					<p id="user-score"></p>
+				</div>
+				<div class="computer">
+					<p class="computer-total">CPU's Score:</p>
+					<p id="computer-score"></p>
+				</div>
+			</div>
+			<div class="message">
+				<p id="message">Roll!</p>
+			</div>
+				<div class="dice-section">
+				<div class="dice"></div>
+				<div class="dice-two"></div>
+			</div>
+			<div class="numbers">
+				<p>The Number is:  <span id="total">14</span></p>
+			 <div class="choices">
+				<div class="user-choice">
+					<p>Your Said:</p>
+					<p id="user-choice"></p>
+				</div>
+				<div class="computer-choice">
+					<p>CPU Said:</p>
+					<p id="computer-choice"></p>
+				</div>
+			 </div>
+			</div>
+		<div class="choices btns">
+			<button id="up">UP</button>
+			<button id="equal">EQUAL</button>
+			<button id="down">DOWN</button>
+		</div>
+		</div>
+		<!--   SCOREBOARD   -->
+		<div class="position table scoreboard">
+			<div class="numbers">
+				<p id="winner"></p>
+			</div>
+			<div class="choices">
+				<div class="user">
+					<p>Your Score:</p>
+					<p id="user-sc">8</p>
+				</div>
+				<div class="computer">
+					<p class="computer-total">CPU's Score:</p>
+					<p id="computer-sc">9</p>
+				</div>
+			</div>
+			<div class="choices btns">
+			<button id="replay">Play Again!</button>
+		</div>
+		</div>
+
+	</main>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

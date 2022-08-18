@@ -81,8 +81,8 @@ const rollDice = (user, comp) => {
 	setTimeout(() => {
 		let randomNOne = randomNumber();
 		let randomNTwo = randomNumber();
-		dice.style.backgroundImage = `url('/img/dice-${randomNOne}.png')`;
-		diceTwo.style.backgroundImage = `url('/img/dice-${randomNTwo}.png')`;
+		dice.style.backgroundImage = `url('./img/dice-${randomNOne}.png')`;
+		diceTwo.style.backgroundImage = `url('./img/dice-${randomNTwo}.png')`;
 		dice.style.animation = '';
 		diceTwo.style.animation = '';
 		totalNumber = randomNOne + randomNTwo;
